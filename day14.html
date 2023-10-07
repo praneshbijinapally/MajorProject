@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+
+
+body{
+    background:url('https://img.freepik.com/premium-photo/abstract-blue-digital-gradient-blends-background_954789-556.jpg')no-repeat;
+ 
+    background-image:fixed;
+background-position:center;
+background-size:cover;
+    width:100%;
+}
+.a{
+  position:relative;
+  background-color:transparent;
+  border:10px solid rgba(19, 210, 118, 0.1);
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREw6PCycZU33GCov8QeqRzRSB6I7_GCdG1-brl-72JbsyMTS2YJlrqNG642Z-7bezjDAw&usqp=CAU)no-repeat;
+ border-radius: 20px;
+ backdrop-filter:blur(20px);
+  justify-content: center;
+  align-content: center;
+  width:500px;
+  height:500px;
+  left:400px;
+  top:50px;
+  
+
+ 
+}
+.c{
+    width:70%;
+    height:45px;
+    background:rgb(123, 123, 214);
+    border:none;
+    outline:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size: 20px;
+    color:white;
+    font-weight: 500;
+}
+
+.d{
+    margin-top:20px;
+   
+}
+.e{
+    text-decoration: none;
+    cursor:pointer;
+
+}
+a:hover{
+    color:white;
+    text-decoration: underline;
+}
+.f{
+    text-decoration:none;
+    color:white;
+    font-size: 25px;
+}
+.g{
+    color:brown;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center; 
+}
+.input-box{
+    position:relative;
+    width:80%;
+    height:40px;
+    
+    border-bottom: 2px solid black;
+    margin:10px; 
+    color:red;
+    
+}
+.input-box label{
+       position:absolute;
+       top:70%;
+       font-weight:500;
+       left:5px;
+       transform: translateY(-50%);
+       pointer-events: none;
+       transition: .5s;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    margin-top:-30px;
+}
+
+.input-box input{
+    width:100%;
+    height:100%;
+    
+    background:transparent;
+    border:none;
+    outline:none; 
+    color:rgb(91, 47, 47);
+    font-size:15px;
+    
+}
+.icon{
+    position:absolute;
+    right:8px;
+    top:-8px;
+    font-size:25px;
+    line-height:57px;
+}
+.remember{
+    font-size:20px;
+  
+     
+}
+.register{
+    font-size: 21px;
+    color:blue;
+    margin-top:-25px;
+
+}
+.icon-close{
+    position:absolute;
+    left:450px;
+    top:20px;
+    font-size: 30px;
+    cursor:pointer;
+    z-index:1;
+}
+#p{
+    top:10px;
+}
+#q{
+    top:27px;
+}
+</style>
+
+
+
+
+
+<body>
+<div class="a" align="center">
+<span class="icon-close"><ion-icon name="close"></ion-icon></span>
+<h1 class="g">Registration Form</h1>
+<div class="input-box" id="p">
+    <span class="icon"><ion-icon name="person"></ion-icon></span>
+    <input type="Username" required>
+    <label >Username</label>
+    </div>
+<div class="input-box" id="q">
+<span class="icon"><ion-icon name="mail"></ion-icon></span>
+<input type="email" required>
+<label >Email</label>
+</div>
+<br><br>
+<div class="input-box">
+<span class="icon"><ion-icon name="lock"></ion-icon></span>
+<input type="password" required >
+<label >Password</label>
+</div>
+<br>
+<div class="remember">
+<input type="checkbox" class="d">I Accept terms&conditions
+
+</div>
+<br><br>
+
+<button class="c">Submit</button>
+<br><br>
+<div class="register">
+<p> Already An User?<a href="day13.html" class="f">  LoginHere
+</div>
+</div>
+<script src="day13.js"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+</body>
+</html>
